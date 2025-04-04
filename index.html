@@ -1,165 +1,123 @@
+
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Ichraf Mouelhi | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio accessible de Ichraf Mouelhi, Data Analyst spécialisée en BI et modélisation prédictive.">
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f4f6f8;
-            margin: 0;
-            color: #1a1a1a;
-        }
-        header {
-            background: linear-gradient(to right, #004080, #0088cc);
-            color: white;
-            padding: 3rem 2rem 1rem;
-            text-align: center;
-        }
-        header img {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            border: 4px solid white;
-            margin-bottom: 1rem;
-            object-fit: cover;
-        }
-        .btn-cv {
-            background-color: white;
-            color: #004080;
-            padding: 0.6rem 1.2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 1rem;
-            display: inline-block;
-        }
-        main {
-            max-width: 1000px;
-            margin: auto;
-            padding: 2rem;
-        }
-        section {
-            margin-bottom: 3rem;
-        }
-        h2 {
-            border-left: 4px solid #004080;
-            padding-left: 1rem;
-            margin-top: 3rem;
-        }
-        .bio {
-            background-color: white;
-            padding: 1.5rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        }
-        .project {
-            background-color: white;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-        }
-        .project img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        .project-info {
-            flex: 1;
-        }
-        .project-info a {
-            color: #004080;
-            font-size: 1.1rem;
-            text-decoration: none;
-        }
-        .project-info a:hover, a:focus {
-            text-decoration: underline;
-            outline: none;
-        }
-        footer {
-            text-align: center;
-            background-color: #d9d9d9;
-            padding: 1rem;
-        }
-        a:focus, button:focus {
-            outline: 3px solid #ffcc00;
-            outline-offset: 2px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ichraf Mouelhi | Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <meta name="description" content="Portfolio de Ichraf Mouelhi - Data Analyst & BI Specialist">
+  <meta name="theme-color" content="#004080">
+  <meta name="color-scheme" content="light dark">
 </head>
+
 <body>
-    <header role="banner">
-        <img src="photo_profil.jpg" alt="Photo de Ichraf Mouelhi" aria-label="Portrait de Ichraf Mouelhi">
-        <h1>Ichraf Mouelhi</h1>
-        <p>Data Analyst passionnée</p>
-        <a href="CV_ichraf.pdf" class="btn-cv" download>Télécharger mon CV</a>
-    </header>
 
-    <main role="main">
-        <section class="bio" id="bio">
-            <h2>À propos de moi</h2>
-            <p>
-                Rigoureuse et curieuse, je suis passionnée par l’analyse de données et par la transformation de l’information en leviers de décision concrets. 
-                Animée par une soif d’apprendre et d'innover, je fais preuve d'un esprit d’analyse affûté et d'une grande capacité d’adaptation, ce qui me permet d’aborder des projets variés avec une approche méthodique et orientée solutions. 
-                Je mets mon expertise en Business Intelligence, Data Analytics et modélisation prédictive au service de solutions adaptées aux besoins métier. 
-                Dotée d’une forte aptitude à la communication et au travail collaboratif, je suis prête à m’investir dans des projets ambitieux, dans un environnement qui valorise le respect mutuel, la bienveillance et le professionnalisme.
-            </p>
+  <main>
+
+    <aside class="sidebar" data-sidebar role="complementary" aria-label="Profil utilisateur">
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Photo de Ichraf Mouelhi" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Ichraf Mouelhi">Ichraf Mouelhi</h1>
+          <p class="title">Data Analyst & BI</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn aria-label="Afficher les contacts">
+          <span>Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:ichraf@example.com" class="contact-link">ichraf@example.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Localisation</p>
+              <address>France</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://github.com/Ichraf-MOUELHI" target="_blank" class="social-link" aria-label="GitHub">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <div class="main-content">
+
+      <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link>À propos</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+        </ul>
+      </nav>
+
+      <article class="about active" data-page="about">
+        <header><h2 class="h2 article-title">À propos</h2></header>
+
+        <section class="about-text">
+          <p>
+            Rigoureuse et curieuse, je suis passionnée par l’analyse de données et par la transformation de l’information en leviers de décision concrets.
+            Animée par une soif d’apprendre et d'innover, je fais preuve d'un esprit d’analyse affûté et d'une grande capacité d’adaptation,
+            ce qui me permet d’aborder des projets variés avec une approche méthodique et orientée solutions.
+          </p>
+          <p>
+            Je mets mon expertise en Business Intelligence, Data Analytics et modélisation prédictive au service de solutions adaptées aux besoins métier.
+            Dotée d’une forte aptitude à la communication et au travail collaboratif, je suis prête à m’investir dans des projets ambitieux,
+            dans un environnement qui valorise le respect mutuel, la bienveillance et le professionnalisme.
+          </p>
         </section>
+      </article>
 
+      <article class="portfolio" data-page="portfolio">
+        <header><h2 class="h2 article-title">Portfolio</h2></header>
+        <p>La section des projets personnalisés sera ici (à intégrer avec JavaScript ou HTML statique).</p>
+      </article>
+
+      <article class="contact" data-page="contact">
+        <header><h2 class="h2 article-title">Contact</h2></header>
         <section>
-            <h2>Mes projets GitHub</h2>
-
-            <div class="project">
-                <img src="https://placehold.co/100x100?text=Malnutrition" alt="Aperçu du projet Malnutrition">
-                <div class="project-info">
-                    <h3><a href="https://github.com/Ichraf-MOUELHI/Malnutrition" target="_blank">Malnutrition</a></h3>
-                    <p>Analyse des données liées à la malnutrition dans différents pays.</p>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="https://placehold.co/100x100?text=Fraude" alt="Aperçu du projet Fraud Detection">
-                <div class="project-info">
-                    <h3><a href="https://github.com/Ichraf-MOUELHI/Fraud_detection" target="_blank">Fraud Detection</a></h3>
-                    <p>Détection de fraudes à l'aide d'algorithmes de machine learning.</p>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="https://placehold.co/100x100?text=Vin" alt="Aperçu du projet Vente de vin en ligne">
-                <div class="project-info">
-                    <h3><a href="https://github.com/Ichraf-MOUELHI/Vente-de-vin-en-ligne" target="_blank">Vente de vin en ligne</a></h3>
-                    <p>Analyse des ventes d'une boutique de vin en ligne.</p>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="https://placehold.co/100x100?text=Poulet" alt="Aperçu du projet Étude de marché Poulet Français">
-                <div class="project-info">
-                    <h3><a href="https://github.com/Ichraf-MOUELHI/Etude_de_marche_poulet_Francais_2018-2022" target="_blank">Étude de marché Poulet Français</a></h3>
-                    <p>Etude de marché sur le poulet Français et possibilité d'exportation à l'international (Année 2021).</p>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="https://placehold.co/100x100?text=Eau" alt="Aperçu du projet Dashboard WaterWorld">
-                <div class="project-info">
-                    <h3><a href="https://github.com/Ichraf-MOUELHI/Dashboard-WaterWorld" target="_blank">Dashboard WaterWorld</a></h3>
-                    <p>Tableau de bord interactif sur la distribution de l'eau dans le monde.</p>
-                </div>
-            </div>
+          <p>Pour toute demande, vous pouvez me contacter à l'adresse suivante :</p>
+          <p><a href="mailto:ichraf@example.com">ichraf@example.com</a></p>
         </section>
-    </main>
+      </article>
 
-    <footer role="contentinfo">
-        <p>© 2025 Ichraf Mouelhi | Tous droits réservés</p>
-    </footer>
+    </div>
+
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
